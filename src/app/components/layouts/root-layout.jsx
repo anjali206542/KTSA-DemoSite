@@ -91,7 +91,7 @@ export function RootLayout() {
                 </Link>
               ))}
               <Link
-                to="/admin/login-page"
+                to="/admin/login"
                 className="block px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
