@@ -1,6 +1,7 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { Trophy, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { FooterPlayer } from "../ui/FooterPlayer.jsx";
 
 export function RootLayout() {
   const location = useLocation();
@@ -91,7 +92,7 @@ export function RootLayout() {
                 </Link>
               ))}
               <Link
-                to="/admin/login-page"
+                to="/admin/login"
                 className="block px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -230,6 +231,11 @@ export function RootLayout() {
           </div>
         </div>
       </footer>
+
+      {/* Full width sticky footer player */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 pointer-events-none">
+        <FooterPlayer />
+      </div>
     </div>
   );
 }
