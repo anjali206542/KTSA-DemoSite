@@ -232,10 +232,10 @@ export function RootLayout() {
         </div>
       </footer>
 
-      {/* Full width sticky footer player */}
+      {/* Full width sticky footer player 
       <div className="fixed bottom-0 left-0 right-0 z-40 pointer-events-none">
         <FooterPlayer />
-      </div>
+      </div>*/}
     </div>
   );
 }
